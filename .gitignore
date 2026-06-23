@@ -1,0 +1,37 @@
+# IDE / Editor
+*.iml
+.idea/
+.gradle/
+.navigation/
+*.swp
+*~
+.DS_Store
+
+# Build
+/build
+/captures
+.externalNativeBuild
+.cxx
+
+# Local configuration
+local.properties
+.bundle
+
+# Keys & Credentials
+*.jks
+*.keystore
+*.p12
+*.key
+*.pem
+google-services.json
+secrets.properties
+
+# AI Tools
+.claude/
+.gemini/
+.cursor/
+.aider/
+.idea/copilot/
+
+# OS specific
+Thumbs.db
