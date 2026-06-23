@@ -824,3 +824,19 @@ Everything is stored locally.
 * LiPo 400 mAh (#3898)
 * PCA9548 (#5626)
 * Official Android and Adafruit Documentation
+
+## Tasks Priority
+
+| ID  | Feature                               | Description                                                                 |
+|-----|--------------------------------------|-----------------------------------------------------------------------------|
+| F0  | Design system                        | ✅ DONE (archived)                                                          |
+| F1  | App shell & navigation               | Scaffold, navigation, theme setup, empty screens                           |
+| F2  | Onboarding & permissions             | Welcome → disclosure → consent → grant permissions                         |
+| F3  | Manage monitored apps                | Pick/edit watched apps (Instagram, TikTok, etc.)                           |
+| F4  | Detection engine + Home/Status       | AccessibilityService, armed/active state, foreground service               |
+| F5  | Intervention                         | Overlay system, escalation logic, phone haptics                             |
+| F6  | Wristband (BLE)                      | Pairing, device management, vibration test                                 |
+| F7  | Logging / data layer                 | Sessions, detections, responses (local storage)                             |
+| F8  | Insights & stats                     | Dashboard, per-app and time-based analytics                                 |
+| F9  | Reflective summaries                 | Gemini Nano nudges and summaries                                            |
+| F10 | Settings & privacy                   | Intensity control, revoke consent, export/delete data                       |
