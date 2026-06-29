@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Resurface</string>
+    <string name="accessibility_service_description">Resurface watches scrolling and app-switch events in monitored apps to detect mindless scrolling. It never reads screen content, messages, or images. All processing stays on your device.</string>
 </resources>
