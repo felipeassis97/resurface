@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.resurface.app.ui.screens.home.HomeScreen
 import com.resurface.app.ui.screens.insights.InsightsScreen
+import com.resurface.app.ui.screens.monitoredapps.MonitoredAppsScreen
 import com.resurface.app.ui.screens.settings.SettingsScreen
 
 @Composable
@@ -21,6 +22,13 @@ fun ResurfaceNavHost(
     ) {
         composable<HomeRoute> { HomeScreen() }
         composable<InsightsRoute> { InsightsScreen() }
-        composable<SettingsRoute> { SettingsScreen() }
+        composable<SettingsRoute> {
+            SettingsScreen(
+                onNavigateToMonitoredApps = { navController.navigate(MonitoredAppsRoute) },
+            )
+        }
+        composable<MonitoredAppsRoute> {
+            MonitoredAppsScreen(onBack = { navController.popBackStack() })
+        }
     }
 }

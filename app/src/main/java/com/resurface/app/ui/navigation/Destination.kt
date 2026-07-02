@@ -21,6 +21,13 @@ object InsightsRoute
 object SettingsRoute
 
 /**
+ * Monitored-apps sub-screen route. Deliberately NOT a [Destination] — it is reached
+ * from Settings and must not appear as a navigation-rail/bottom-bar item.
+ */
+@Serializable
+object MonitoredAppsRoute
+
+/**
  * The top-level destinations shown in the navigation container.
  *
  * Single source of truth: the adaptive shell iterates [all] to build navigation

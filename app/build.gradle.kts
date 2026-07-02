@@ -50,6 +50,8 @@ dependencies {
     implementation(libs.kotlinx.serialization.json)
     implementation(libs.hilt.android)
     ksp(libs.hilt.compiler)
+    // Hilt's generated ServiceComponent references errorprone annotations (@CanIgnoreReturnValue).
+    compileOnly(libs.errorprone.annotations)
     implementation(libs.androidx.hilt.navigation.compose)
     implementation(libs.androidx.datastore.preferences)
     implementation(libs.androidx.lifecycle.viewmodel.compose)
@@ -60,6 +62,9 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     testImplementation(libs.junit)
+    testImplementation(libs.kotlinx.coroutines.test)
+    testImplementation(libs.turbine)
+    testImplementation(libs.androidx.datastore.preferences)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.compose.ui.test.junit4)
     androidTestImplementation(libs.androidx.espresso.core)
